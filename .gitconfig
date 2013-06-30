@@ -2,4 +2,5 @@
 	editor = vim
 [alias]
 	ci = commit -v
+	lg = log -p
 	st = status
