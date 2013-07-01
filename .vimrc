@@ -6,6 +6,8 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'tpope/vim-fugitive'
+
 filetype plugin indent on
 
 syntax on
