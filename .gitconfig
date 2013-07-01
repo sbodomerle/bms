@@ -3,4 +3,5 @@
 [alias]
 	ci = commit -v
 	lg = log -p
+	rlog = log --pretty=format:\"%h %C(auto,green)%cr%C(auto,reset) %cn %C(auto,green)%s%C(auto,reset)\"
 	st = status
