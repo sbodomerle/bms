@@ -11,6 +11,7 @@ Bundle 'tpope/vim-fugitive'
 filetype plugin indent on
 
 syntax on
+set shortmess+=I
 
 set backspace=start,indent,eol
 set cursorline
