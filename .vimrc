@@ -13,6 +13,7 @@ filetype plugin indent on
 syntax on
 
 set backspace=start,indent,eol
+set cursorline
 
 set noswapfile
 
