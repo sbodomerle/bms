@@ -8,6 +8,9 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
 
+Bundle 'eclim'
+let g:EclimCompletionMethod = 'omnifunc'
+
 filetype plugin indent on
 
 syntax on
