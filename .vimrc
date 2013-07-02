@@ -23,6 +23,8 @@ set nowrap
 :nnoremap <leader>w :setlocal wrap!<CR>:setlocal wrap?<CR>
 
 set noswapfile
+set undodir=~/.vim/.undo,/tmp
+set undofile
 
 " git commits
 au BufNewFile,BufRead *.git/COMMIT_EDITMSG set tw=105 noai noshowmatch
