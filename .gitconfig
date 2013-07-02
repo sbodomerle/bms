@@ -5,6 +5,7 @@
 	ci = commit -v
 	co = checkout
 	df = diff --cached
+	fa = fetch --all
 	lg = log -p
 	locate = !sh -c 'git ls-files | grep --color=auto "$1"' -
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
