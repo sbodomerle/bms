@@ -16,6 +16,8 @@ filetype plugin indent on
 syntax on
 set shortmess+=I
 set incsearch
+set hlsearch
+:nnoremap <leader>q :nohlsearch<CR>
 
 set backspace=start,indent,eol
 set cursorline
