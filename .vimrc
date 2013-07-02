@@ -12,6 +12,7 @@ filetype plugin indent on
 
 syntax on
 set shortmess+=I
+set incsearch
 
 set backspace=start,indent,eol
 set cursorline
