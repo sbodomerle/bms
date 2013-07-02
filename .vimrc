@@ -26,6 +26,7 @@ set nowrap
 set noswapfile
 set undodir=~/.vim/.undo,/tmp
 set undofile
+set history=200
 
 " git commits
 au BufNewFile,BufRead *.git/COMMIT_EDITMSG set tw=105 noai noshowmatch
