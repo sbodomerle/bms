@@ -29,3 +29,6 @@ set undofile
 " git commits
 au BufNewFile,BufRead *.git/COMMIT_EDITMSG set tw=105 noai noshowmatch
 au BufNewFile,BufRead *.git/COMMIT_EDITMSG setlocal spell spelllang=en_us
+
+au BufReadPre *.pdf set ro
+au BufReadPost *.pdf %!pdftotext -nopgbrk "%" - |fmt -csw105
