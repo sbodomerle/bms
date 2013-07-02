@@ -3,6 +3,7 @@
 [alias]
 	amend = commit --amend -v
 	ci = commit -v
+	co = checkout
 	df = diff --cached
 	lg = log -p
 	locate = !sh -c 'git ls-files | grep --color=auto "$1"' -
