@@ -8,6 +8,9 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
 
+Bundle 'Valloric/YouCompleteMe'
+:nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 Bundle 'eclim'
 let g:EclimCompletionMethod = 'omnifunc'
 
