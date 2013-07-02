@@ -5,6 +5,7 @@
 	ci = commit -v
 	df = diff --cached
 	lg = log -p
+	locate = !sh -c 'git ls-files | grep --color=auto "$1"' -
 	rlog = log --pretty=format:\"%h %C(auto,green)%cr%C(auto,reset) %cn %C(auto,green)%s%C(auto,reset)\"
 	st = status
 [color]
