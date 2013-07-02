@@ -16,6 +16,9 @@ set shortmess+=I
 set backspace=start,indent,eol
 set cursorline
 
+set nowrap
+:nnoremap <leader>w :setlocal wrap!<CR>:setlocal wrap?<CR>
+
 set noswapfile
 
 " git commits
