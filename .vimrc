@@ -14,6 +14,8 @@ syntax on
 
 set backspace=start,indent,eol
 
+set noswapfile
+
 " git commits
 au BufNewFile,BufRead *.git/COMMIT_EDITMSG set tw=105 noai noshowmatch
 au BufNewFile,BufRead *.git/COMMIT_EDITMSG setlocal spell spelllang=en_us
