@@ -12,6 +12,8 @@
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	rlog = log --pretty=format:\"%h %C(auto,green)%cr%C(auto,reset) %cn %C(auto,green)%s%C(auto,reset)\"
+	spull = !git svn fetch && git-svn rebase
+	spush = !git svn dcommit
 	st = status
 [color]
 	ui = auto
