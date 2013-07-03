@@ -3,6 +3,7 @@
 [alias]
 	amend = commit --amend -v
 	ci = commit -v
+	cloneurl = config --get remote.origin.url
 	co = checkout
 	df = diff --cached
 	fa = fetch --all
