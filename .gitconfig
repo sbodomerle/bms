@@ -15,6 +15,7 @@
 	spull = !git svn fetch && git-svn rebase
 	spush = !git svn dcommit
 	st = status
+	wdiff = diff --color-words
 [color]
 	ui = auto
 [merge]
