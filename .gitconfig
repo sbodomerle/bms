@@ -18,6 +18,8 @@
 	wdiff = diff --color-words
 [color]
 	ui = auto
+[diff]
+	renames = copy
 [merge]
 	conflictstyle = diff3
 [push]
