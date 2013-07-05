@@ -7,6 +7,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-unimpaired'
 
 Bundle 'Valloric/YouCompleteMe'
 :nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
