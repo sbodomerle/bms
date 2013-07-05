@@ -31,6 +31,8 @@ set wildignore=*.class,*.o,*.bak,*.swp,*.pyc
 set nowrap
 :nnoremap <leader>w :setlocal wrap!<CR>:setlocal wrap?<CR>
 
+set autoindent
+
 set noswapfile
 set undodir=~/.vim/.undo,/tmp
 set undofile
