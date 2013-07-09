@@ -29,6 +29,8 @@ set cursorline
 set wildmenu
 set wildmode=list:longest
 set wildignore=*.class,*.o,*.bak,*.swp,*.pyc
+set splitbelow
+set splitright
 
 set nowrap
 :nnoremap <leader>w :setlocal wrap!<CR>:setlocal wrap?<CR>
