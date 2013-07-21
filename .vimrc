@@ -9,6 +9,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'sukima/xmledit'
+Bundle 'scrooloose/nerdcommenter'
 
 Bundle 'Valloric/YouCompleteMe'
 :nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
