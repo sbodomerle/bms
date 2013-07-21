@@ -16,6 +16,8 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'eclim'
 let g:EclimCompletionMethod = 'omnifunc'
 
+Bundle 'bitc/vim-bad-whitespace'
+
 filetype plugin indent on
 
 syntax on
@@ -52,7 +54,3 @@ au BufReadPost *.pdf %!pdftotext -nopgbrk "%" - |fmt -csw105
 au FileType c,cpp,cs,java,jsp,objc,sh,sql,xml set number
 :nnoremap <leader>n :setlocal number!<CR>
 :nnoremap <leader>r :setlocal relativenumber!<CR>
-
-" Highlight trailing whitespace in red - useful for Git.
-highlight BadWhitespace ctermbg=red guibg=red
-autocmd FileType c,cpp,cs,java,jsp,objc,sh,sql,xml syntax match BadWhitespace /\s\+$/
