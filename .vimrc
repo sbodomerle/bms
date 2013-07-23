@@ -18,6 +18,7 @@ Bundle 'eclim'
 let g:EclimCompletionMethod = 'omnifunc'
 
 Bundle 'bitc/vim-bad-whitespace'
+Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 
 filetype plugin indent on
 
@@ -51,7 +52,3 @@ au BufNewFile,BufRead *.git/COMMIT_EDITMSG setlocal spell spelllang=en_us
 
 au BufReadPre *.pdf set ro
 au BufReadPost *.pdf %!pdftotext -nopgbrk "%" - |fmt -csw105
-
-au FileType c,cpp,cs,java,jsp,objc,sh,sql,xml set number
-:nnoremap <leader>n :setlocal number!<CR>
-:nnoremap <leader>r :setlocal relativenumber!<CR>
