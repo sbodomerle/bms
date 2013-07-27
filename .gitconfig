@@ -20,6 +20,7 @@
 	ui = auto
 [diff]
 	renames = copy
+	algorithm = patience
 [merge]
 	conflictstyle = diff3
 [push]
