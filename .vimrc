@@ -20,6 +20,8 @@ let g:EclimCompletionMethod = 'omnifunc'
 Bundle 'bitc/vim-bad-whitespace'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 
+Bundle 'Shougo/vimproc.vim'
+
 filetype plugin indent on
 
 syntax on
