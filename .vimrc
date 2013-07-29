@@ -22,6 +22,21 @@ Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 
 Bundle 'Shougo/vimproc.vim'
 
+Bundle 'Shougo/unite.vim'
+let g:unite_source_history_yank_enable = 1
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+nnoremap <leader>t :Unite -no-split -buffer-name=files -start-insert file_rec/async:!<CR>
+nnoremap <leader>f :Unite -no-split -buffer-name=files -start-insert file<CR>
+nnoremap <leader>m :Unite -no-split -buffer-name=mru   -start-insert file_mru<CR>
+nnoremap <leader>y :Unite -no-split -buffer-name=yank history/yank<CR>
+nnoremap <leader>e :Unite -no-split -buffer-name=buffer buffer<CR>
+autocmd FileType unite call s:unite_settings()
+function! s:unite_settings()
+  " Enable navigation with control-j and control-k in insert mode
+  imap <buffer> <C-j>   <Plug>(unite_select_next_line)
+  imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
+endfunction
+
 filetype plugin indent on
 
 syntax on
