@@ -63,6 +63,8 @@ set undodir=~/.vim/.undo,/tmp
 set undofile
 set history=200
 
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 " git commits
 au BufNewFile,BufRead *.git/COMMIT_EDITMSG set tw=105 noai noshowmatch
 au BufNewFile,BufRead *.git/COMMIT_EDITMSG setlocal spell spelllang=en_us
