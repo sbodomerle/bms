@@ -1,6 +1,8 @@
 [user]
 	name = Bodo-Merle Sandor
 	email = sbodomerle@gmail.com
+[init]
+	templatedir = ~/.git_template
 [core]
 	editor = vim
 	preloadindex = true
@@ -12,6 +14,7 @@
 	ci = commit -v
 	cloneurl = config --get remote.origin.url
 	co = checkout
+	ctags = !.git/hooks/ctags
 	df = diff --cached
 	fa = fetch --all
 	lg = log -p
