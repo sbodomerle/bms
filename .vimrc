@@ -13,6 +13,7 @@ Bundle 'scrooloose/nerdcommenter'
 
 Bundle 'Valloric/YouCompleteMe'
 :nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_collect_identifiers_from_tags_files = 1
 
 Bundle 'eclim'
 let g:EclimCompletionMethod = 'omnifunc'
