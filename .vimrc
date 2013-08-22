@@ -11,6 +11,10 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'sukima/xmledit'
 Bundle 'scrooloose/nerdcommenter'
 
+Bundle 'majutsushi/tagbar'
+let g:tagbar_autofocus = 1
+:nnoremap <F9> :TagbarToggle<CR>
+
 Bundle 'Valloric/YouCompleteMe'
 :nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_collect_identifiers_from_tags_files = 1
