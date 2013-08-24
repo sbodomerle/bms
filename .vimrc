@@ -18,6 +18,7 @@ let g:tagbar_autofocus = 1
 Bundle 'Valloric/YouCompleteMe'
 :nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_extra_conf_globlist = ['~/*']
 
 Bundle 'eclim'
 let g:EclimCompletionMethod = 'omnifunc'
