@@ -30,3 +30,5 @@
 	default = simple
 [apply]
 	whitespace = fix
+[help]
+	autocorrect = 1
