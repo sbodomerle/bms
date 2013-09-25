@@ -23,6 +23,8 @@ let g:ycm_extra_conf_globlist = ['~/*']
 Bundle 'eclim'
 let g:EclimCompletionMethod = 'omnifunc'
 
+Bundle 'marijnh/tern_for_vim'
+
 Bundle 'bitc/vim-bad-whitespace'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 
