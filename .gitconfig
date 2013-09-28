@@ -3,6 +3,7 @@
 [core]
 	editor = vim
 [alias]
+	ack = -c color.grep.filename='bold green' -c color.grep.match='black yellow' grep --break --heading -n
 	amend = commit --amend -v
 	ci = commit -v
 	cloneurl = config --get remote.origin.url
