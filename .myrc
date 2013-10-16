@@ -7,3 +7,5 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 PS1='$(__git_ps1 "(%s) ")[\j]'$PS1
+
+alias snoopmysql="tshark -d tcp.port==3306,mysql -T fields -e mysql.query 'port 3306'"
