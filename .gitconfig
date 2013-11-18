@@ -13,8 +13,11 @@
 	fa = fetch --all
 	lg = log -p
 	locate = !sh -c 'git ls-files | grep --color=auto "$1"' -
+	logf = log --pretty=fuller
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	new = log --abbrev-commit --pretty=oneline --no-merges @{1}..
+	pend = log @{upstream}..
 	rlog = log --pretty=format:\"%h %C(auto,green)%cr%C(auto,reset) %cn %C(auto,green)%s%C(auto,reset)\"
 	root = rev-parse --show-toplevel
 	spull = !git svn fetch && git-svn rebase
