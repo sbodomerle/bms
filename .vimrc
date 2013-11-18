@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-surround'
 Bundle 'sukima/xmledit'
 Bundle 'scrooloose/nerdcommenter'
 
