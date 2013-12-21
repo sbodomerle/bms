@@ -84,3 +84,9 @@ au BufReadPost *.pdf %!pdftotext -nopgbrk "%" - |fmt -csw105
 "====[ Swap : and ; to make colon commands easier to type ]======
 nnoremap  ;  :
 nnoremap  :  ;
+
+"====[ Swap v and CTRL-V, because Block mode is more useful that Visual mode ]====
+nnoremap    v   <C-V>
+nnoremap <C-V>     v
+vnoremap    v   <C-V>
+vnoremap <C-V>     v
