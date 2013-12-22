@@ -29,6 +29,14 @@ Bundle 'marijnh/tern_for_vim'
 Bundle 'bitc/vim-bad-whitespace'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 
+Bundle 'godlygeek/tabular'
+nnoremap <leader>a= :Tabularize /=<CR>
+vnoremap <leader>a= :Tabularize /=<CR>
+nnoremap <leader>a<bar> :Tabularize /<bar><CR>
+vnoremap <leader>a<bar> :Tabularize /<bar><CR>
+nnoremap <leader>a: :Tabularize /:\zs<CR>
+vnoremap <leader>a: :Tabularize /:\zs<CR>
+
 Bundle 'Shougo/vimproc.vim'
 
 Bundle 'Shougo/unite.vim'
