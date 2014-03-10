@@ -82,6 +82,7 @@ set undofile
 set history=200
 
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+cnoremap sudow w !sudo tee % >/dev/null
 
 " git commits
 au BufNewFile,BufRead *.git/COMMIT_EDITMSG set tw=105 noai noshowmatch
