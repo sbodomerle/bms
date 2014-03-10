@@ -1,3 +1,5 @@
+[user]
+	name = Bodo-Merle Sandor
 [init]
 	templatedir = ~/.git_template
 [core]
