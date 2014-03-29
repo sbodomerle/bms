@@ -4,33 +4,33 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-surround'
-Bundle 'sukima/xmledit'
-Bundle 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-surround'
+Plugin 'sukima/xmledit'
+Plugin 'scrooloose/nerdcommenter'
 
-Bundle 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 let g:tagbar_autofocus = 1
 :nnoremap <F9> :TagbarToggle<CR>
 
-Bundle 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 :nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_always_populate_location_list = 1
 let g:ycm_extra_conf_globlist = ['~/*']
 
-Bundle 'eclim'
+Plugin 'eclim'
 let g:EclimCompletionMethod = 'omnifunc'
 
-Bundle 'marijnh/tern_for_vim'
+Plugin 'marijnh/tern_for_vim'
 
-Bundle 'bitc/vim-bad-whitespace'
-Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'bitc/vim-bad-whitespace'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 
-Bundle 'godlygeek/tabular'
+Plugin 'godlygeek/tabular'
 nnoremap <leader>a= :Tabularize /=<CR>
 vnoremap <leader>a= :Tabularize /=<CR>
 nnoremap <leader>a<bar> :Tabularize /<bar><CR>
@@ -38,9 +38,10 @@ vnoremap <leader>a<bar> :Tabularize /<bar><CR>
 nnoremap <leader>a: :Tabularize /:\zs<CR>
 vnoremap <leader>a: :Tabularize /:\zs<CR>
 
-Bundle 'Shougo/vimproc.vim'
+Plugin 'Shougo/vinarise'
+Plugin 'Shougo/vimproc.vim'
 
-Bundle 'Shougo/unite.vim'
+Plugin 'Shougo/unite.vim'
 let g:unite_source_history_yank_enable = 1
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <leader>t :Unite -no-split -buffer-name=files -start-insert file_rec/async:!<CR>
