@@ -1,0 +1,67 @@
+[user]
+	name = Bodo-Merle Sandor
+	email = sbodomerle@gmail.com
+[core]
+	editor = vim
+	preloadindex = true
+[alias]
+	ack = -c color.grep.filename='bold green' -c color.grep.match='black yellow' grep --break --heading -n
+	amend = commit --amend -v
+	applyurl = !wget -qO- $1 | git apply -
+	br = branch
+	ci = commit -v
+	cloneurl = config --get remote.origin.url
+	co = checkout
+	df = diff --cached
+	fa = fetch --all
+	lg = log -p
+	locate = !sh -c 'git ls-files | grep --color=auto "$1"' -
+	logf = log --pretty=fuller
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	new = log --abbrev-commit --pretty=oneline --no-merges @{1}..
+	pend = log @{upstream}..
+	prune-all = !git remote | xargs -n 1 git remote prune
+	pull = pull --ff-only
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbi = rebase --interactive
+	rbs = rebase --skip
+	rlog = log --pretty=format:\"%h %C(auto,green)%cr%C(auto,reset) %cn %C(auto,green)%s%C(auto,reset)\"
+	root = rev-parse --show-toplevel
+	showm = show -M
+	spull = !git svn fetch && git-svn rebase
+	spush = !git svn dcommit
+	st = status
+	undo = reset --keep HEAD
+	up = pull --rebase
+	wdiff = diff --color-words
+	wshow = show --color-words
+	git = !git
+[color]
+	ui = auto
+[diff]
+	renames = copy
+	algorithm = patience
+[merge]
+	conflictstyle = diff3
+[push]
+	default = simple
+[apply]
+	whitespace = fix
+[help]
+	autocorrect = 1
+[rerere]
+	enabled = 1
+	autoupdate = true
+[grep]
+	extendRegexp = true
+[diff "ps"]
+	textconv = ps2ascii
+	binary = true
+[sendemail]
+	chainreplyto = false
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = sbodomerle@gmail.com
