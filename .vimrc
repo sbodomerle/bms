@@ -8,3 +8,17 @@ Plugin 'gmarik/Vundle.vim'
 
 call vundle#end()
 filetype plugin indent on
+
+syntax on
+
+set autoindent
+set backspace=start,indent,eol
+set history=200
+set hlsearch
+set incsearch
+set noswapfile
+set shortmess+=I
+set splitbelow
+set splitright
+set undodir=~/.vim/.undo,/tmp
+set undofile
