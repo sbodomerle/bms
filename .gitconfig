@@ -5,7 +5,6 @@
 	templatedir = ~/.git_template
 [core]
 	editor = vim
-	preloadindex = true
 [alias]
 	ack = -c color.grep.filename='bold green' -c color.grep.match='black yellow' grep --break --heading -n
 	amend = commit --amend -v
@@ -68,3 +67,5 @@
 	smtpserverport = 587
 	smtpencryption = tls
 	smtpuser = sbodomerle@gmail.com
+[pager]
+	blame = less -S
