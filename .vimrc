@@ -23,3 +23,5 @@ set splitbelow
 set splitright
 set undodir=~/.vim/.undo,/tmp
 set undofile
+
+highlight Pmenu ctermfg=White ctermbg=Blue guifg=#ffffff guibg=#0000ff
