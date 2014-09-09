@@ -25,3 +25,7 @@ set undodir=~/.vim/.undo,/tmp
 set undofile
 
 highlight Pmenu ctermfg=White ctermbg=Blue guifg=#ffffff guibg=#0000ff
+
+"====[ Swap : and ; to make colon commands easier to type ]======
+nnoremap  ;  :
+nnoremap  :  ;
