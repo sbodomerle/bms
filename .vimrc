@@ -1,11 +1,21 @@
 set nocompatible
+
+" needed for vundle
 filetype off
 
+" vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                          Vundle configuration                           "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-unimpaired'
+
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 filetype plugin indent on
@@ -29,3 +39,23 @@ highlight Pmenu ctermfg=White ctermbg=Blue guifg=#ffffff guibg=#0000ff
 "====[ Swap : and ; to make colon commands easier to type ]======
 nnoremap  ;  :
 nnoremap  :  ;
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                tagbar                                   "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:tagbar_left = 1
+let g:tagbar_autofocus = 1
+let g:tagbar_autopreview = 1
+:nnoremap <F9> :TagbarToggle<CR>
+let g:tagbar_type_go = {
+    \ 'ctagstype': 'go',
+    \ 'kinds' : [
+        \'p:package',
+	\'i:imports:1',
+        \'f:function',
+        \'v:variables',
+        \'t:type',
+        \'c:const'
+    \]
+\}
