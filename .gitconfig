@@ -10,6 +10,7 @@
 	amend = commit --amend -v
 	applyurl = !wget -qO- $1 | git apply -
 	br = branch
+	check-whitespace = !git diff-tree --check $(git hash-object -t tree /dev/null) HEAD
 	ci = commit -v
 	cloneurl = config --get remote.origin.url
 	co = checkout
