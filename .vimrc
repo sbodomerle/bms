@@ -12,6 +12,7 @@ call vundle#begin()
 "                          Vundle configuration                           "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+Plugin 'FSwitch'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-unimpaired'
 
@@ -39,6 +40,18 @@ highlight Pmenu ctermfg=White ctermbg=Blue guifg=#ffffff guibg=#0000ff
 "====[ Swap : and ; to make colon commands easier to type ]======
 nnoremap  ;  :
 nnoremap  :  ;
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                fswitch                                  "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" A "companion" file is a .cpp file to an .h file and vice versa
+
+" Opens the companion file in the current window
+nnoremap <Leader>sh :FSHere<cr>
+
+" Creates a new window on the left and opens the companion file in it
+nnoremap <Leader>sv :FSSplitLeft<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                tagbar                                   "
